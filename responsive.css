@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+.flower-box img{
+    width:200px;
+}
+.flower-box h2{
+    text-align: center;
+}
+.flower-box p{
+    text-align: justify;
+}
+
+.flower-box{
+    width:200px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px gray;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    gap:20px;
+    justify-content: center;
+    
+}
+@media screen and (max-width:900px){
+    .container{
+        grid-template-columns: repeat(3,auto);
+    }
+    }
+    
+@media screen and (max-width:630px){
+    .container{
+        grid-template-columns: repeat(2,auto);
+    }
+    }
+    
+@media screen and (max-width:430px){
+    .container{
+        grid-template-columns: repeat(1,auto);
+    }
+    }
+    
