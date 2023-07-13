@@ -1,0 +1,25 @@
+*{
+   margin:0;
+   padding:0;
+}
+.date{
+   width:50px;
+   height:50px;
+   border: 2px solid brown;
+   border-radius: 5px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.calander{
+   width:50%;
+   display:grid;
+   grid-template-columns: repeat(7,50px);
+   gap:16px;
+   padding-top:50px;
+   margin:auto;
+}
+h1{
+   text-align: center;
+}
