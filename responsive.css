@@ -19,9 +19,9 @@
 }
 .container{
     display:grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,100px);
     gap:20px;
-    justify-content: center;
+    justify-content: space-around;
     
 }
 @media screen and (max-width:900px){
