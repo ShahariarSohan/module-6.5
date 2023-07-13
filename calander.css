@@ -13,13 +13,9 @@
    
 }
 .calander{
-   width:50%;
    display:grid;
    grid-template-columns: repeat(7,50px);
    gap:16px;
    padding-top:50px;
-   margin:auto;
-}
-h1{
-   text-align: center;
+  
 }
