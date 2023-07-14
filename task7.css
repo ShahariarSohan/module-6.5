@@ -1,11 +1,12 @@
-*{
+/* *{
     margin:0;
     padding: 0;
-}
+} */
 .header,.nav, .main ,.sidebar,.advertising,.footer{
     background-color: aqua;
     border: 2px solid red;
     border-radius: 5px;
+    padding:10px;
 }
 .header{
     grid-area: header;
@@ -24,4 +25,38 @@
 }
 .footer{
     grid-area: footer;
+}
+.container{
+    display:grid;
+    gap:20px;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main   main   sidebar"
+    "nav    main   main   advertising"
+    "footer footer footer footer"
+    ;
+}
+@media screen and (max-width:576px) {
+    .container{
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "advertising"
+        "footer"
+        ;
+    }
+    
+}
+@media screen and (min-width:576px) and (max-width:992px)
+{
+    .container{
+        grid-template-areas: 
+        "header        header     header"
+        "nav           nav        nav"
+        "sidebar       main       main"
+        "advertising   footer     footer"
+        ;
+}
 }
